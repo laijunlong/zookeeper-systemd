@@ -1,11 +1,11 @@
 [Unit]
 Description=Apache Zookeeper Service
 After=network.target
+
 [Service]
 User=zookeeper
 Group=zookeeper
 SyslogIdentifier=zookeeper
-Environment=ZHOME=/usr/share/zookeeper
 ExecStart=/usr/bin/java \
   -Dzookeeper.log.dir="/var/log/zookeeper" \
   -Dzookeeper.root.logger="INFO,ROLLINGFILE" \
