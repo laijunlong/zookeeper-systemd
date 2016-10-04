@@ -13,7 +13,7 @@ ExecStart=/usr/bin/java \
   -Dcom.sun.management.jmxremote \
   -Dcom.sun.management.jmxremote.local.only=false \
   org.apache.zookeeper.server.quorum.QuorumPeerMain \
-  "/etc/zookeeper/conf/zoo.cfg" > "/var/log/zookeeper/zookeeper.out" 2>&1 < /dev/null
+  "/etc/zookeeper/conf/zoo.cfg"
 
 [Install]
 WantedBy=multi-user.target
